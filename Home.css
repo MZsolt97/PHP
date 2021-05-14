@@ -1,0 +1,292 @@
+body{
+    background-color: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+/*h1{
+    position: absolute;
+    top:5%;
+    left:3%;
+}*/
+
+#mode{
+    position: absolute;
+    float:left;
+    top:5%;
+    left:2%;
+}
+
+#logout{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+ul li{
+    cursor:pointer;
+    border: solid;
+    margin: 5pt;
+    border-radius: 5%;
+    padding:10px;
+}
+
+#mainControllers ul li{
+    padding: 8pt;
+}
+
+.active{
+    background-color: grey;
+}
+
+#mainControllers{
+    width: 12%;
+    height: auto;
+    position: absolute;
+    top:20%;
+    left: 3%;
+}
+
+#subControllers{
+    position: absolute;
+    top: 6%;
+    left: 8%;
+    width: 90%;
+}
+#subControllers ul li{
+    display: inline-block;
+    width: 20%;
+}
+
+#content{
+    position: absolute;
+    top:20%;
+    left:18%;
+    width: 50%;
+    height:auto;
+}
+
+#msg{
+    padding:10px;
+    top:20%;
+    left: 68%;
+    position: absolute;
+    color:red;
+}
+
+
+
+#addPersonBlock table td, th, tr{
+    padding: 5px;
+}
+
+#addPersonBlock table td:nth-child(even){
+    float:right;
+}
+
+#addPersonBtn{
+    float: right;
+}
+
+
+#personList table{
+    width: 70%;
+}
+
+#personList table:nth-child(2){
+    margin-top: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#personList table:nth-child(2) td, tr, th{
+    padding: 5px;
+    border: solid 2px;
+}
+
+#addErrorTypeBlock table, td, th, tr{
+    padding: 5px;
+}
+
+#addErrorTypeBtn{
+    float:right;
+}
+
+#errorTypeList{
+    width:auto;
+    height: auto;
+    text-align: center;
+    float: left;
+    margin-left: 5%;
+}
+
+#errorTypeList table{
+    border-collapse: collapse;
+}
+
+#errorTypeList table td,tr,th{
+    border: solid 2px;
+}
+
+#editErrorTypeBlock{
+    float: left;
+}
+
+#editErrorTypeBlock table{
+    float: left;
+    padding: 5px;
+}
+
+#editErrorTypeBtn{
+    float:right;
+}
+
+#removeErrorTypeBlock{
+    float:left;
+}
+
+#removeErrorTypeBlock table{
+    padding: 5px;
+}
+
+#removeErrorTypeBtn{
+    float:right;
+}
+
+#errorTicketListBlock table{
+    padding: 5px;
+    margin: 5px;
+}
+
+#errorTicketListBlock table:nth-child(1) td:nth-child(even){
+    float: right;
+}
+
+#errorTicketListBlock table:nth-child(2){
+    border-collapse: collapse;
+}
+
+#errorTicketListBlock table:nth-child(2) td, tr, th{
+    border: solid 2px;
+}
+
+#personDataBlock table{
+    padding: 5px;
+    width: 70%;
+}
+
+#personDataBlock button{
+    float: right;
+}
+
+#personDataBlock table td:nth-child(even){
+    float:right;
+}
+
+#personDataBlock table:nth-child(2), table:nth-child(3){
+    margin-top: 20px;
+}
+
+#ticketDataBlock table{
+    width:100%;
+}
+
+
+#ticketDataBlock table td:nth-child(even){
+    float: right;
+}
+
+#ticketDataBlock table img{
+    float: right;
+}
+
+#ticketDataBlock select{
+    width: 100%;
+    float: right;
+}
+
+#ticketDataBlock button{
+    float: right;
+}
+
+#answers{
+    overflow: auto;
+    height: 365px;
+    border: solid 2px;
+    padding: 10px;
+}
+
+.answers{
+    background-color:darkblue;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    width: 80%;
+}
+
+.answers td:nth-child(2){
+    float: right;
+}
+
+#addErrorTicketBlock table td:nth-child(even), button{
+    float: right;
+}
+
+.removePersonBtn, .editPersonBtn, .open{
+    cursor: pointer;
+    color: blue;
+}
+
+.removePersonBtn:hover, .editPersonBtn:hover, .open:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+#areYouSure{
+    text-align: center;
+    border: solid 4px;
+    border-color: red;
+    width: 40%;
+    padding: 10px;
+    position: absolute;
+    top:20%;
+    left:22%;
+    display: none;
+    background-color: white;
+    z-index: 9;
+}
+
+/*#declineBtn{
+    float:right;
+}*/
+
+#areYouSure button{
+   margin-right: 28%;
+}
+
+/*#declineBtn{
+    float: right;
+    position: relative;
+    right: 10%;
+}
+
+#removePersonBtn2{
+    float: left;
+    position: relative;
+    left: 10%;
+}*/
+
+
+
+
+

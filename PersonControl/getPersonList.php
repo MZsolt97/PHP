@@ -30,13 +30,15 @@
 
     
     if(isset($_GET['email']) && !empty($_GET['email'])){
-        $email = "%".$_GET['email']."%";
+        $email = "%".mysqli_real_escape_string($db, $_GET['email'])."%";
+        //$email = "%".$_GET['email']."%";
     }
     else if(isset($_GET['email']) && empty($_GET['email'])){
         $email = "%";
     }
     if(isset($_GET['company']) && !empty($_GET['company'])){
-        $company = "%".$_GET['company']."%";
+        $company = "%".mysqli_real_escape_string($db, $_GET['company'])."%";
+        //$company = "%".$company."%";
     }
     else if(isset($_GET['company']) && empty($_GET['company'])){
         $company = "%";

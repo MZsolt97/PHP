@@ -44,7 +44,7 @@
                     ."<td>A bejelentő e-mail címe:</td><td>".$row['EMAIL']."</td>";
 
             if(!empty($row['IMAGE'])){
-                $image = "<td rowspan =\"6\"><img src=\"/TicketControl/".$row['IMAGE']."\" alt=\"".$row['IMAGE']."\" height = \"200px\" width = \"320px\"></td>";
+                $image = "<td rowspan =\"6\"><img src=\"/TicketControl/".$row['IMAGE']."\" alt=\"".$row['IMAGE']."\" width = \"350px\"></td>";
                 $ticketData.=$image;
             }
 
@@ -112,7 +112,7 @@
                     ."<td>A bejelentő e-mail címe:</td><td>".$row['EMAIL']."</td>";
 
             if(!empty($row['IMAGE'])){
-                $image = "<td rowspan =\"6\"><img src=\"/TicketControl/".$row['IMAGE']."\" alt=\"".$row['IMAGE']."\" height = \"200px\" width = \"320px\"></td>";
+                $image = "<td rowspan =\"6\"><img src=\"/TicketControl/".$row['IMAGE']."\" alt=\"".$row['IMAGE']."\" width = \"350px\"></td>";
                 $ticketData.=$image;
             }
 

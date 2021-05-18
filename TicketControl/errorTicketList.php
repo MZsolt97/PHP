@@ -33,7 +33,7 @@
         $pid = $person->getPid();
 
         if(isset($_GET['selectedError']) && !empty($_GET['selectedError'])){
-            $selectedError = $_GET['selectedError'];
+            $selectedError = mysqli_real_escape_string($db, $_GET['selectedError']);
             $query = $db->query("SELECT
                                 err.TYPENAME,
                                 er.TID,
@@ -94,8 +94,9 @@
             ."</tr>";
         
         if(isset($_GET['selectedError']) && !empty($_GET['selectedError']) && isset($_GET['email']) && !empty($_GET['email'])){
-            $selectedError = $_GET['selectedError'];
-            $email = "%".$_GET['email']."%";
+            $selectedError = mysqli_real_escape_string($db, $_GET['selectedError']);
+            $email = mysqli_real_escape_string($db, $_GET['email']);
+            $email = "%".$email."%";
             $query = $db->query("SELECT
                                     err.TYPENAME,
                                     p.EMAIL,
@@ -115,7 +116,9 @@
                                 );
         }
         else if(isset($_GET['email']) && !empty($_GET['email'])){
-            $email = "%".$_GET['email']."%";
+            $email = mysqli_real_escape_string($db, $_GET['email']);
+            $email = "%".$email."%";
+
             $query = $db->query("SELECT
                                     err.TYPENAME,
                                     p.EMAIL,
@@ -134,7 +137,7 @@
                                 );
         }
         else if(isset($_GET['selectedError']) && !empty($_GET['selectedError'])){
-            $selectedError = $_GET['selectedError'];
+            $selectedError = mysqli_real_escape_string($db, $_GET['selectedError']);
             $query = $db->query("SELECT
                                 err.TYPENAME,
                                 p.EMAIL,

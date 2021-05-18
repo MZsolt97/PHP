@@ -32,7 +32,7 @@
         if(empty($name)){
             $errorMSG.= "A név megadása kötelező!<br/>";
         }
-        else if(preg_match("/[^a-zA-Z'\-áÁéÉíÍóÓöÖőŐúÚüÜűŰ]/", $name)){
+        else if(preg_match("/[^a-zA-Z'\-áÁéÉíÍóÓöÖőŐúÚüÜűŰ[^0-9]]\s/", $name)){
             $errorMSG.= "A név nem tartalmazhat speciális karaktereket!<br/>";
         }
         if(empty($email)){
@@ -362,7 +362,7 @@
         }
     }
 
-    //////////      Az admin töröl egy fiókot az adatbázisból       //////////
+    //////////      Fiók törlése       //////////
     if($_POST['btn'] == "removePersonBtn2"){
         
         $pid = $_POST['pid'];

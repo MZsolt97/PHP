@@ -6,7 +6,7 @@
     session_start();
 
     if(!empty($_SESSION['person'])){
-        header('location: /Home.php');
+        header('location: Home.php');
     }
 
     function Login(){
@@ -51,7 +51,7 @@
                     $person = new User($row['PID'], $row['NAME'], $row['EMAIL'], $row['COMPANY']);
                     $_SESSION['person'] = $person;
                 }
-                header("location:/Home.php");
+                header("location:Home.php");
             }
             else{
                 $errorMSG .= "Hibás e-mail cím vagy jelszó!<br/>";

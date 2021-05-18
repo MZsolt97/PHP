@@ -6,7 +6,7 @@
     session_start();
 
     if(empty($_SESSION['person'])){
-        header("location:/Logout.php");
+        header("location:Logout.php");
     }
     else{
         $person = $_SESSION['person'];

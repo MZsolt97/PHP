@@ -1,6 +1,11 @@
 <?php
 
     require_once('Methods.php');
+    
+    
+    if(!empty($_SESSION['person'])){
+        header('location: Home.php');
+    }
 
     function registration(){
         $errorMSG = "";
@@ -17,7 +22,7 @@
         if(empty($name)){
             $errorMSG.= "A név megadása kötelező!<br/>";
         }
-        else if(preg_match("/[^a-zA-Z'\-áÁéÉíÍóÓöÖőŐúÚüÜűŰ]/", $name)){
+        else if(preg_match("/[^a-zA-Z'\-áÁéÉíÍóÓöÖőŐúÚüÜűŰ]\s/", $name)){
             $errorMSG.= "A név nem tartalmazhat speciális karaktereket!<br/>";
         }
         if(empty($email)){

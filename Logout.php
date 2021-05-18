@@ -9,6 +9,6 @@
 ?>
 
 <script>
-    window.location.href('localhost/Login.php');
+    window.location.href('Login.php');
 </script>
 
